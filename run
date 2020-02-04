@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Run the specified solution for the specified language
+"./solutions/${1}/run" "$2"

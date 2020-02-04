@@ -1,0 +1,15 @@
+/*
+
+!/.gitignore
+
+!/solutions
+/solutions/*
+!/solutions/rust
+/solutions/rust/*
+!/solutions/rust/run
+!/solutions/rust/*.rs
+
+!/run
+
+!/LICENSE
+!/README.md

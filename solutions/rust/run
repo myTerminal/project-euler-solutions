@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Compile the specified solution
+rustc "problem-$1"
+
+# Run the compiled binary
+"problem-$1"
