@@ -4,6 +4,12 @@
 
 !/solutions
 /solutions/*
+!/solutions/javascript
+/solutions/javascript/*
+!/solutions/javascript/run
+!/solutions/javascript/invoker
+!/solutions/javascript/README.md
+!/solutions/javascript/*.js
 !/solutions/rust
 /solutions/rust/*
 !/solutions/rust/run

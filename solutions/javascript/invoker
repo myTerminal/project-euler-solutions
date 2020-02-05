@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+/* global process require */
+
+// Extract the supplied solution number
+const { argv: [program, thisFile, solutionId] } = process;
+
+// Import the solution file
+const { run } = require(`./problem-${solutionId}`);
+
+// Run the solution and output the result
+console.log(run());

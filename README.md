@@ -7,6 +7,7 @@ My solutions to ProjectEuler problems in different programming languages
 
 ## Programming languages
 
+1. [JavaScript](javascript)
 1. [Rust](rust)
 
 ## Running a solution
@@ -23,4 +24,4 @@ For example, in order to run the solution to problem number 1 in Rust, you can r
 
 ## More
 
-1. Older project: [project-euler-solutions-legacy](https://github.com/myTerminal/project-euler-solutions-legacy)
+1. My first project on GitHub: [project-euler-solutions-legacy](https://github.com/myTerminal/project-euler-solutions-legacy)
