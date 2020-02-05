@@ -1,7 +1,26 @@
 #!/usr/bin/env bash
 
+# Set solution directory
+solutions_dir=$(dirname "${0}")
+
+# Load assets
+. "${solutions_dir}/../../lib"
+
+# Check if rustc is available
+if ! [ $(command -v rustc) ]; then
+    pe_error "rustc is not installed!"
+fi
+
+# Compose the solution filename
+solution_file="${solutions_dir}/problem-${1}"
+
+# Check if the solution exists
+if ! [ -f "${solution_file}.rs" ]; then
+    pe_error "This solution doesn't exist!"
+fi
+
 # Compile the specified solution
-rustc "problem-$1"
+rustc --out-dir "${solutions_dir}" "${solution_file}.rs"
 
 # Run the compiled binary
-"problem-$1"
+"${solution_file}"

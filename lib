@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+pe_string_error_color_start="\033[1;31m"
+pe_string_error_color_end="\033[0m"
+
+# Function to abort for an arbitary reason
+pe_error () {
+    echo -e "${pe_string_error_color_start}ERROR: ${1}${pe_string_error_color_end}"
+    exit 0
+}

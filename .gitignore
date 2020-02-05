@@ -10,6 +10,7 @@
 !/solutions/rust/README.md
 !/solutions/rust/*.rs
 
+!/lib
 !/run
 
 !/LICENSE
