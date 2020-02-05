@@ -1,7 +1,6 @@
 # [Rust](https://www.rust-lang.org)
 
-A language empowering everyone
-to build reliable and efficient software.
+> A language empowering everyone to build reliable and efficient software. - [rust-lang.org](https://www.rust-lang.org)
 
 ## Dependencies
 
