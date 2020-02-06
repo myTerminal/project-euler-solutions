@@ -102,7 +102,7 @@ const fibonacci = term => {
 	    : fibonacci(term - 1) + fibonacci(term - 2);
 };
 
-const fibonacciMemoizable = term => {
+const fibonacciMemoizable = function (term) {
     const func = (typeof(this) === 'function')
 	    ? this
 	    : fibonacciMemoizable;
@@ -112,7 +112,7 @@ const fibonacciMemoizable = term => {
 	    : func.call(this, term - 1) + func.call(this, term - 2);
 };
 
-const fibonacciMemoizableBig = term => {
+const fibonacciMemoizableBig = function (term) {
     const func = (typeof(this) === 'function')
 	    ? this
 	    : fibonacciMemoizableBig;
