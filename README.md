@@ -7,8 +7,8 @@ My solutions to ProjectEuler problems in different programming languages
 
 ## Programming languages
 
-1. [JavaScript](javascript)
-1. [Rust](rust)
+1. [JavaScript](solutions/javascript)
+1. [Rust](solutions/rust)
 
 ## Running a solution
 
