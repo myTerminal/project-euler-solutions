@@ -7,36 +7,36 @@ module.exports.run = () => {
     const numbers = getPrimesBelowNumber(limit);
 
     const getRotations = number => {
-	    let stringNumber = number.toString();
+        let stringNumber = number.toString();
 
-		const iterations = stringNumber.length;
-		const rotations = [number];
+        const iterations = stringNumber.length;
+        const rotations = [number];
 
-	    for (let i = 0; i < iterations - 1; i++) {
-		    stringNumber = stringNumber.substr(1)
-		        + stringNumber.substr(0,1);
+        for (let i = 0; i < iterations - 1; i++) {
+            stringNumber = stringNumber.substr(1)
+                + stringNumber.substr(0,1);
 
-		    rotations.push(+(stringNumber));
-	    }
+            rotations.push(+(stringNumber));
+        }
 
-	    return rotations;
-	};
+        return rotations;
+    };
 
     const areAllPrime = rotations => {
-	    for (let i = 0; i < rotations.length; i++) {
-		    if (!numbers[rotations[i]]) {
-		        return false;
+        for (let i = 0; i < rotations.length; i++) {
+            if (!numbers[rotations[i]]) {
+                return false;
             }
         }
 
-	    return true;
-	};
+        return true;
+    };
 
-	let count = 0;
+    let count = 0;
 
     for (let i = 0; i < limit; i++) {
-	    if (numbers[i] && areAllPrime(getRotations(i))) {
-	        count++;
+        if (numbers[i] && areAllPrime(getRotations(i))) {
+            count++;
         }
     }
 

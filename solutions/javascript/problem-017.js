@@ -2,7 +2,7 @@
 
 module.exports.run = () => {
     let sum = 0;
-    
+
     const getWordRepresentation = number =>
           getThousandsRep(number);
 

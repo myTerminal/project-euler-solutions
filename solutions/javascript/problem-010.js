@@ -9,7 +9,7 @@ module.exports.run = () => {
     let sum = 0;
 
     for (let i = 0; i < limit; i++) {
-	    sum += numbers[i];
+        sum += numbers[i];
     }
 
     return sum;

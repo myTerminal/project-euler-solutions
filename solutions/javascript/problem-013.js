@@ -1,4 +1,4 @@
-﻿/* global require module */
+/* global require module */
 
 const { addBigNumbers } = require('./common');
 
@@ -106,11 +106,11 @@ module.exports.run = () => {
         '53503534226472524250874054075591789781264330331690'
     ];
 
-	let initialSum = theArray[0],
+    let initialSum = theArray[0],
         output;
 
     for (let i = 1; i <= theArray.length - 1; i++) {
-	    initialSum = addBigNumbers(initialSum, theArray[i]);
+        initialSum = addBigNumbers(initialSum, theArray[i]);
     }
 
     output = initialSum.substr(0, 10);

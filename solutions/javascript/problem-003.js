@@ -8,10 +8,10 @@ module.exports.run = () => {
     const primes = getPrimesBelowNumber(limit);
 
     let output;
-    
+
     for (let i = primes.length - 1; i > 0 && !output; i--) {
-	    if (number % primes[i] === 0) {
-	        output = primes[i];
+        if (number % primes[i] === 0) {
+            output = primes[i];
         }
     }
 

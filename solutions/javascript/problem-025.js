@@ -13,11 +13,11 @@ module.exports.run = () => {
         i = 0;
 
     while (!number) {
-	    i++;
-	    fib = myFunc.getValue(i);
+        i++;
+        fib = myFunc.getValue(i);
 
-	    if (fib.length >= 1000) {
-	        number = i;
+        if (fib.length >= 1000) {
+            number = i;
         }
     }
 

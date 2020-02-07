@@ -3,19 +3,19 @@
 module.exports.run = () => {
     let number;
 
-	const isNumberDivisibleBy1To20 = number => {
-	    for (let i = 3; i < 20; i++) {
-		    if (number % i !== 0) {
-		        return false;
+    const isNumberDivisibleBy1To20 = number => {
+        for (let i = 3; i < 20; i++) {
+            if (number % i !== 0) {
+                return false;
             }
         }
 
-	    return true;
-	};
+        return true;
+    };
 
     for (let i = 20; !number; i = i + 20) {
-	    if (isNumberDivisibleBy1To20(i)) {
-	        number = i;
+        if (isNumberDivisibleBy1To20(i)) {
+            number = i;
         }
     }
 

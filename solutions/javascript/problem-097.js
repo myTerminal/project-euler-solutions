@@ -1,4 +1,4 @@
-﻿/* global require module */
+/* global require module */
 
 const {
     addBigNumbers,
@@ -6,20 +6,20 @@ const {
 } = require('./common');
 
 module.exports.run = () => {
-	const power = 7830457;
+    const power = 7830457;
 
     const getLastTenDigits = numberInString => {
-	    const len = numberInString.length;
+        const len = numberInString.length;
 
-	    return numberInString.substring(len - 10);
-	};
+        return numberInString.substring(len - 10);
+    };
 
     let init = '2',
         output;
 
     for (let i = 1; i <= power - 1; i++) {
-	    init = addBigNumbers(init, init);
-	    init = getLastTenDigits(init);
+        init = addBigNumbers(init, init);
+        init = getLastTenDigits(init);
     }
 
     output = multiplyBigNumbers(init, '28433');

@@ -2,15 +2,15 @@
 
 module.exports.run = () => {
     const weekdays = [];
-	const someDate = new Date(1901, 0, 1);
+    const someDate = new Date(1901, 0, 1);
 
-	const getDayName = day =>
+    const getDayName = day =>
         weekdays[day];
 
-	const checkIfSunday = someDate =>
-	    getDayName(someDate.getDay()) === 'Sunday';
+    const checkIfSunday = someDate =>
+        getDayName(someDate.getDay()) === 'Sunday';
 
-	const checkIfFirstOfMonth = someDate =>
+    const checkIfFirstOfMonth = someDate =>
         someDate.getDate() === 1;
 
     let count = 0;
@@ -25,11 +25,11 @@ module.exports.run = () => {
 
     while (someDate.getFullYear() < 2001) {
 
-	    if (checkIfFirstOfMonth(someDate) && checkIfSunday(someDate)) {
-	        count++;
+        if (checkIfFirstOfMonth(someDate) && checkIfSunday(someDate)) {
+            count++;
         }
 
-	    someDate.setDate(someDate.getDate() + 1);
+        someDate.setDate(someDate.getDate() + 1);
     }
 
     return count;

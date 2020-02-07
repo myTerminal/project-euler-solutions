@@ -5,28 +5,28 @@ module.exports.run = () => {
     const limit = 200;
 
     const getCombinations = (limit, denominations) => {
-	    let count = 0,
-		    currentCoin;
+        let count = 0,
+            currentCoin;
 
-	    if (limit === 0) {
-		    return 1;
+        if (limit === 0) {
+            return 1;
         }
 
-	    if (denominations.length <= 0) {
-		    return 0;
+        if (denominations.length <= 0) {
+            return 0;
         }
 
-	    currentCoin = denominations.pop();
+        currentCoin = denominations.pop();
 
-	    for (let i = 0; (currentCoin * i) <= limit; i++) {
-		    count += getCombinations(
+        for (let i = 0; (currentCoin * i) <= limit; i++) {
+            count += getCombinations(
                 limit-currentCoin*i,
-				denominations.slice(0)
+                denominations.slice(0)
             );
         }
 
-	    return count;
-	};
+        return count;
+    };
 
     return getCombinations(limit, denominations);
 };

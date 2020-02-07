@@ -1,35 +1,35 @@
-﻿/* global module */
+/* global module */
 
 module.exports.run = () => {
-	const george = word => {
-	    if (word.length === 1) {
-		    return [word];
+    const george = word => {
+        if (word.length === 1) {
+            return [word];
         }
 
-	    const list = [];
+        const list = [];
 
-		var startLetter,
-		    remainingWord,
-		    smallGeorge;
+        let startLetter,
+            remainingWord,
+            smallGeorge;
 
-	    for (let i = 0; i < word.length; i++) {
-		    startLetter = word[i];
-		    remainingWord = word.replace(startLetter, '');
-		    smallGeorge = george(remainingWord);
+        for (let i = 0; i < word.length; i++) {
+            startLetter = word[i];
+            remainingWord = word.replace(startLetter, '');
+            smallGeorge = george(remainingWord);
 
-		    for (let j = 0; j < smallGeorge.length; j++) {
-		        list.push(startLetter + smallGeorge[j]);
+            for (let j = 0; j < smallGeorge.length; j++) {
+                list.push(startLetter + smallGeorge[j]);
 
-		        if (list.length >= 1000000) {
-			        return list;
+                if (list.length >= 1000000) {
+                    return list;
                 }
-		    }
-	    }
+            }
+        }
 
-	    return list;
-	};
+        return list;
+    };
 
-	const sequence = george("0123456789");
+    const sequence = george("0123456789");
 
     return sequence[999999];
 };
