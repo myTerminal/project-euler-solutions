@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Record the start time
+pe_time_start=$(date +%s%3N)
+
+# Run the command
+$@
+
+# Record the end time
+pe_time_end=$(date +"%s%3N")
+
+# Print the time taken
+echo "Took $((${pe_time_end} - ${pe_time_start})) milliseconds"
