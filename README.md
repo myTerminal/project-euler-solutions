@@ -16,17 +16,17 @@ In order to run a solution to a particular problem in a particular language, use
 
     run <language> <problem-number>
 
-where `language` should be one of the names mentioned above, in small-case and `problem-number` should be a three-digit problem number padded by `0`s.
+where `language` should be one of the names mentioned above, in small-case and `problem-number` should be a number.
 
 For example, in order to run the solution to problem number 1 in Rust, you can run:
 
-    run rust 001
+    run rust 1
 
 ## Measuring solution running time
 
 To measure the time taken for running a solution, run it with `perf`. For example, to measure the time for problem number 1 in Rust, you can use:
 
-    perf run rust 001
+    perf run rust 1
 
 The number of milliseconds spent will be displayed.
 
