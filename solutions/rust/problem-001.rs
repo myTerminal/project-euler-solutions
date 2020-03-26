@@ -1,11 +1,7 @@
 fn main() {
-    let mut sum = 0;
-
-    for i in 0..1000 {
-        if (i % 3 == 0) || (i % 5 == 0) {
-            sum += i;
-        }
-    }
+    let sum = (0..1000)
+        .filter(|i| (i % 3 == 0) || (i % 5 == 0))
+        .sum::<isize>();
 
     println!("{}", sum);
 }
