@@ -10,6 +10,11 @@
 !/solutions/javascript/invoker
 !/solutions/javascript/README.md
 !/solutions/javascript/*.js
+!/solutions/common-lisp
+/solutions/common-lisp/*
+!/solutions/common-lisp/run
+!/solutions/common-lisp/README.md
+!/solutions/common-lisp/*.lsp
 !/solutions/rust
 /solutions/rust/*
 !/solutions/rust/run

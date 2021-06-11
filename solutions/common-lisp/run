@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Set solution directory
+solutions_dir=$(dirname "${0}")
+
+# Load assets
+. "${solutions_dir}/../../lib"
+
+# Check if SBCL is available
+if ! [ $(command -v sbcl) ]; then
+    pe_error "SBCL is not installed!"
+fi
+
+# Compose the solution filename
+solution_file="${solutions_dir}/problem-${1}"
+
+# Check if the solution exists
+if ! [ -f "${solution_file}.lsp" ]; then
+    pe_error "This solution doesn't exist!"
+fi
+
+# Run the solution
+sbcl --script "${solution_file}.lsp"
