@@ -14,4 +14,4 @@ done
 run_command="${root_dir}/solutions/${1}/run ${pe_number}"
 
 # Read the output for the specified language/solution pair
-echo "$(${run_command})"
+echo "$(${run_command})" | awk 'NF'

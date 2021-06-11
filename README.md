@@ -33,6 +33,10 @@ The number of milliseconds spent will be displayed.
 
 **Note:** The number of milliseconds also include the time spent for other tasks like validating the environment, checking if the solution exists, and even the compilation time for the languages that need compilation, etc. and may not represent the exact time taken for the solution.
 
+## Dependencies
+
+1. [awk](https://www.gnu.org/software/gawk/manual)
+
 ## More
 
 1. My first project on GitHub: [project-euler-solutions-legacy](https://github.com/myTerminal/project-euler-solutions-legacy)
