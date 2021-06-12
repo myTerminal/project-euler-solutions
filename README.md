@@ -15,19 +15,19 @@ My solutions to ProjectEuler problems in different programming languages
 
 In order to run a solution to a particular problem in a particular language, use the `run` command as:
 
-    run <language> <problem-number>
+    ./run <language> <problem-number>
 
 where `language` should be one of the names mentioned above, in small-case and `problem-number` should be a number.
 
 For example, in order to run the solution to problem number 1 in Rust, you can run:
 
-    run rust 1
+    ./run rust 1
 
 ## Measuring solution running time
 
 To measure the time taken for running a solution, run it with `perf`. For example, to measure the time for problem number 1 in Rust, you can use:
 
-    perf run rust 1
+    ./perf ./run rust 1
 
 The number of milliseconds spent will be displayed.
 
