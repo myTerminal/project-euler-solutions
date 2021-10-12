@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Set solution directory
-solutions_dir=$(dirname "${0}")
+solutions_dir=$(readlink -f "${0}" | xargs realpath | xargs dirname)
 
 # Load assets
 . "${solutions_dir}/../../lib"

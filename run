@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Set root directory
-root_dir=$(dirname "${0}")
+root_dir=$(readlink -f "${0}" | xargs realpath | xargs dirname)
 
 # Compose a padded solution number
 pe_number="${2}"
